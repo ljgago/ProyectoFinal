@@ -1,0 +1,12 @@
+.corner { 
+  position: absolute;
+  color: #CC7A6F;
+  font-family: "Open Sans", sans-serif;
+  width: 25%;
+}
+
+.c-tl { top: 1rem; left: 1rem; }
+ 
+.c-tr { top: 1.25rem; right: 1rem; text-align: right; }
+
+.c-bl { bottom: .25rem; left: .25rem; }

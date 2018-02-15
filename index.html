@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Proyecto Final</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="corner c-tl">
+      <img src="css/images/logo.png" style="max-width: 60%;">
+    </div>
+    <div class="reveal">
+      <div class="slides">
+        
+        <section> <!-- SPLICE 0 -->
+          <div>
+            <img class="plain" src="css/images/utn.png" height="180" />
+          </div>
+          <br>
+          <h3>
+            <font color="#656565">Proyecto Final</font>
+          </h3>
+          <h1>Monitorización de redes HFC</h1>
+          <p>
+            <small><font color="#656565">Lionel Fernadez || Leonardo Gago || Franco Trillo</font></small>
+          </p>
+        </section>
+        
+        <section> <!-- SPLICE 1 -->
+          <section>
+            <h2>Temas</h2>
+            <ul>
+              <li><a href="#/1/1">Introducción a las redes HFC</a></li>
+              <li><a href="#/2/1"><font color="#ffffff">Objetivo del Proyecto</font></a></li>
+              <li><a href="#/3/1"><font color="#ffffff">Diseño</font></a></li>
+              <li><a href="#/4/1"><font color="#ffffff">Funcionamiento</font></a></li>
+              <li><a href="#/5/1"><font color="#ffffff">Mejoras futuras</font></a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Introducción a las redes HFC</h2>
+            <div>
+              <img src="css/images/catv.png" height="500" />
+            </div>
+          </section>
+        </section>
+        
+        <section> <!-- SPLICE 2 -->
+          <section>
+            <h2>Temas</h2>
+            <ul>
+              <li><a href="#/1/1"><font color="#ffffff">Introducción a las redes HFC</font></a></li>
+              <li><a href="#/2/1">Objetivo del Proyecto</a></li>
+              <li><a href="#/3/1"><font color="#ffffff">Diseño</font></a></li>
+              <li><a href="#/4/1"><font color="#ffffff">Funcionamiento</font></a></li>
+              <li><a href="#/5/1"><font color="#ffffff">Mejoras futuras</font></a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Objetivo del Proyecto</h2>  
+            <ul>
+              <li class="fragment">
+                Conocer el estado de funcionamiento de las fuentes permite:
+                <ul>
+                  <li class="fragment">Detección Proactiva de cortes de energía.</li>
+                  <li class="fragment">Acción inmediata ante salidas de servicio de la fuente y consecuente apagado de la red.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Solución ya implenetada</h2>
+            <ul>
+              <li class="fragment">En redes con servicio doble vía (Cable Modem) las fuentes disponen de Transponders para su monitorización.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Enfoque del Proyecto</h2>
+            <ul>
+              <li class="fragment">
+                <font color="#ff2c2d">Problemática:</font>
+                <ul>
+                  <li class="fragment"><font color="#ff2c2d">Zonas sin servicio de datos.</font></li>
+                  <li class="fragment"><font color="#ff2c2d">Fuentes de tecnología anterior.</font></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h5>Solución Propuesta:</h5>
+            <h2>ESTACION DE MONITORIZACION DE REDES H.F.C.</h2>
+          </section>
+          <section>
+            <h3>Sensado de los parámetros de la fuente y/o red HFC para determinar su estado:</h3>
+            <ul>
+              <li class="fragment">Tensión de alimentación de la red</li>
+              <li class="fragment">Tensión de salida de la fuente</li>
+              <li class="fragment">Tensión del pack de baterías (En fuentes UPS / Stand-By)</li>
+              <li class="fragment">Nivel de Señal de RF en la red</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Envió de Información por SMS:</h3>
+            <ul>
+              <li class="fragment">Keep-Alive Periódico con parámetros</li>
+              <li class="fragment">
+                Detección de problemas:
+                <ul>
+                  <li class="fragment">Salida de serviciDesarrollo de sistema para control Remotoo de la fuente</li>
+                  <li class="fragment">Cortes de señal de RF</li>
+                  <li class="fragment">Cortes de energía del proveedor eléctrico</li>
+                  <li class="fragment">Estimación de autonomía en modo Stand-By</li>    
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section> <!-- SPLICE 3 -->
+          <section>
+            <h2>Temas</h2>
+            <ul>
+              <li><a href="#/1/1"><font color="#ffffff">Introducción a las redes HFC</font></a></li>
+              <li><a href="#/2/1"><font color="#ffffff">Objetivo del Proyecto</font></a></li>
+              <li><a href="#/3/1">Diseño</a></li>
+              <li><a href="#/4/1"><font color="#ffffff">Funcionamiento</font></a></li>
+              <li><a href="#/5/1"><font color="#ffffff">Mejoras futuras</font></a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Diseño</h2>
+            <div>
+              <img src="css/images/diagrama.png" height="500">
+            </div>
+          </section>
+          <section>
+            <h2>Diseño - Circuito</h2>
+            <div>
+              <img src="css/images/circuito.png" height="500">
+            </div>
+          </section>
+          <section>
+            <h2>Diseño - Tablero</h2>
+            <div>
+              <img src="css/images/tablero.png" height="500">
+            </div>
+          </section>
+          <section>
+            <h2>Diseño - Montaje</h2>
+            <div>
+              <img src="css/images/montaje.png" height="500">
+            </div>
+          </section>
+          <section>
+            <h2>Diseño - Software PC</h2>
+            <div>
+              <img src="css/images/serial.png" height="500">
+            </div>
+          </section>
+        </section>
+
+        <section> <!-- SPLICE 4 -->
+          <section>
+            <h2>Temas</h2>
+            <ul>
+              <li><a href="#/1/1"><font color="#ffffff">Introducción a las redes HFC</font></a></li>
+              <li><a href="#/2/1"><font color="#ffffff">Objetivo del Proyecto</font></a></li>
+              <li><a href="#/3/1"><font color="#ffffff">Diseño</font></a></li>
+              <li><a href="#/4/1">Funcionamiento</a></li>
+              <li><a href="#/5/1"><font color="#ffffff">Mejoras futuras</font></a></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Funcionamiento del equipo</h3>
+            <p style="text-align: left;"><font colorDesarrollo de sistema para control Remoto="#009933">En situacion normal:</font></p>
+            <ul>
+              <li class="fragment">ENVÍO PERIÓDICO DE SMS INFORMANDO ULTIMA MEDICIÓN</li>
+              <div class="fragment">
+                <li>Enviando SMS con la frase: GET STATUS</li>
+                <li>Respuesta con valores de la ultima medición</li>
+              </div>
+            </ul>
+          </section>
+          <section>
+            <h3>Funcionamiento del equipo</h3>
+            <div>
+              <img src="css/images/phone-ok.png" height="500">
+            </div>
+          </section>
+          <section>
+            <h3>Funcionamiento del equipo</h3>
+            <p style="text-align: left;"><font color="#ff2c2d">En situación de fallas:</font></p>
+            <ul>
+              <div class="fragment">
+                <li>Tensiones fuera de umbrales.</li>
+                <li>Señal de RF por debajo del umbral.</li>
+              </div>
+              <div class="fragment">
+                <li>ENVÍO PERIÓDICO DE SMS INFORMANDO LA FALLA PRESENTE Y LOS VALORES DE LA ULTIMA MEDICIÓN</li>
+              </div>
+              <div class="fragment">
+                <li>Ante cortes de energía de línea, estimará el tiempo de autonomía restante, informándolo.</li>
+              </div>
+            </ul>
+          </section>
+          <section>
+            <h3>Funcionamiento del equipo</h3>
+            <div>
+              <img src="css/images/phone-off.png" heDesarrollo de sistema para control Remotoight="500">
+            </div>
+          </section>
+        </section>
+
+        <section> <!-- SPLICE 5 -->
+          <section>
+            <h2>Temas</h2>
+            <ul>
+              <li><a href="#/1/1"><font color="#ffffff">Introducción a las redes HFC</font></a></li>
+              <li><a href="#/2/1"><font color="#ffffff">Objetivo del Proyecto</font></a></li>
+              <li><a href="#/3/1"><font color="#ffffff">Diseño</font></a></li>
+              <li><a href="#/4/1"><font color="#ffffff">Funcionamiento</font></a></li>
+              <li><a href="#/5/1">Mejoras futuras</a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Mejoras futuras</h2>
+            <p class="fragment" style="text-align: left;">CORTO PLAZO:</p>
+            <ul>
+              <li class="fragment">
+                Mejoras en el Código del micro-controlador
+                <ul>
+                  <li>Unificación de terminal de Debug y configuración.</li>
+                  <li>Mejorar la información de los SMS.</li>
+                </ul>
+              </li>
+              <li class="fragment">
+                Rediseño del circuito impreso:
+                <ul>
+                  <li>Mas compacto para reducir el tamaño de la placa.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Mejoras futuras</h2>
+            <p class="fragment" style="text-align: left;">LARGO PLAZO:</p>
+            <ul>
+              <li class="fragment">
+                Mejoras en las comunicaciones:
+                <ul>
+                  <li>Utilizar conexión 4G + Protocolo TCP + SMS.</li>
+                </ul>
+              </li>
+              <li class="fragment">
+                Element Manager:
+                <ul>
+                  <li>Central de alarmas (N dispositivos).</li>
+                  <li>Configuración remota de parámetros.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+        
+        <section> <!-- SPLICE 6 -->
+          <h1>¿Preguntas?</h1>
+        </section>
+        
+        <section> <!-- SPLICE 7 -->
+          <h1>¡GRACIAS!</h1>
+          <p style="text-align: center;">
+            <small><font color="#656565">Leonardo Gago</font></small>
+          </p>
+        </section>
+
+        <section> <!-- SPLICE 8 -->
+          <h1>ANEXO</h1>
+          <ul>
+            <li><a href="#/9">Áreas clave del Negocio</font></a></li>
+            <li><a href="#/10">Autonomía</a></li>
+          </ul>  
+        </section>
+
+        <section> <!-- SPLICE 9 -->
+          <section>
+            <h2>Áreas clave del Negocio</h2>
+            <ul>
+              <li>
+                Detección proactiva:
+                <ul>
+                  <li>Mejorar la disponibilidad del servicio.</li>
+                </ul> 
+              </li>
+              <li>
+                Mejorar tiempos de respuesta:
+                <ul>
+                  <li>Adelantarse al llamado del cliente</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Áreas clave del Negocio</h2>
+            <div>
+              <img src="css/images/fuentes-total.png" height="200">
+            </div>
+            <div>
+              <img src="css/images/fuentes-mon.png" height="234">
+            </div>
+          </section>
+          <section>
+            <h2>Áreas clave del Negocio</h2>
+            <div>
+              <img src="css/images/fuentes-estimadas.png" height="250">
+            </div>
+            <p>Venta de 90 Equipos para recuperar inversión</p>
+          </section>
+        </section>
+
+        <section> <!-- SPLICE 10 -->
+          <section>
+            <h2>Análisis Autonomía</h2>
+            <ul>
+              <li>Análisis de la pendiente sobre la caída de tensión en las baterías.</li>
+              <li>Proyección lineal para determinar el tiempo restante hasta alcanzar el punto de corte.</li>
+            </ul>
+            <div>
+              <img src="css/images/autonomia.png" height="320">
+            </div>
+          </section>
+          <section>
+            <h2>Análisis Autonomía</h2>
+            <ul>
+              <li>Algoritmo de calculo:
+                <ul>
+                  <li>Proyección lineal para determinar el tiempo restante hasta alcanzar el punto de corte.</li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              \[\begin{aligned}
+              t \cong \frac{V_{c} - V_{u}}{(V_{\alpha} - V_{u}) / \alpha}
+              \end{aligned} \]  
+            </p>
+          </section>
+          <section>
+            <h2>Análisis Autonomía</h2>
+            <p>
+              \[\begin{aligned}
+              t \cong \frac{V_{c} - V_{u}}{(V_{\alpha} - V_{u}) / \alpha}
+              \end{aligned} \]  
+            </p>
+            <ul>
+              <li>Donde:
+                <ul>
+                  <li>\(\alpha\): Resultado de la evaluación del contador.</li>
+                  <li>\(V_{\alpha}\): Tensión de baterías para el (\(\alpha\)) calculado.</li>
+                  <li>\(V_{c}\): Tensión de corte de la fuente, en general 31,6V.</li>
+                  <li>\(V_{u}\): Último valor de tensión de terna medido.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section> <!-- SPLICE 11 -->
+          <h1>¡GRACIAS!</h1>
+          <p style="text-align: center;">
+            <small><font color="#656565">Leonardo Gago</font></small>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        math: {
+          // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full'
+        },
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/search/search.js', async: true },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
